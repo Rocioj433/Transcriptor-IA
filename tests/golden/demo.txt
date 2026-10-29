@@ -1,0 +1,3 @@
+[00:00:00.500] A: Hola, ¿cómo estás?
+[00:00:05.000] B: Muy bien, gracias.
+[00:01:06.000] Sin hablante asignado.

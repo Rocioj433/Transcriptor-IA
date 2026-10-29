@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="980" viewBox="0 0 1440 980" role="img" aria-label="Antigravity Studio blueprint">
+  <rect width="1440" height="980" fill="#0B0F14"/>
+  <g font-family="Inter, Segoe UI, sans-serif">
+    <!-- header -->
+    <rect x="28" y="28" width="1384" height="72" rx="16" fill="#111820"/>
+    <text x="48" y="72" fill="#E6EDF3" font-size="22" font-weight="700">Antigravity Studio</text>
+    <rect x="1032" y="44" width="360" height="40" rx="10" fill="#0B0F14"/>
+    <text x="1048" y="69" fill="#8B949E" font-size="12">Modelo</text>
+    <text x="1120" y="69" fill="#58A6FF" font-size="14">large-v3-turbo</text>
+
+    <!-- dropzone -->
+    <rect x="28" y="120" width="1384" height="150" rx="16" fill="#0D141C" stroke="#30363D" stroke-dasharray="8 6"/>
+    <text x="720" y="188" fill="#E6EDF3" font-size="18" font-weight="600" text-anchor="middle">Arrastrá tu audio o video acá</text>
+    <text x="720" y="212" fill="#8B949E" font-size="12" text-anchor="middle">mp3 · wav · m4a · mp4 · mkv — hasta 512 MB</text>
+
+    <!-- status -->
+    <rect x="28" y="290" width="1384" height="54" rx="12" fill="#111820"/>
+    <text x="48" y="323" fill="#8B949E" font-size="13">En espera</text>
+    <rect x="140" y="313" width="900" height="8" rx="4" fill="#21262D"/>
+    <rect x="140" y="313" width="180" height="8" rx="4" fill="#58A6FF"/>
+    <text x="1060" y="323" fill="#58A6FF" font-size="13">20%</text>
+
+    <!-- player -->
+    <rect x="28" y="364" width="676" height="470" rx="16" fill="#111820"/>
+    <rect x="46" y="382" width="640" height="180" rx="12" fill="#0B0F14"/>
+    <g fill="#1F6FEB">
+      <rect x="70" y="440" width="4" height="40" rx="2"/>
+      <rect x="80" y="420" width="4" height="80" rx="2"/>
+      <rect x="90" y="450" width="4" height="20" rx="2"/>
+      <rect x="100" y="410" width="4" height="100" rx="2"/>
+      <rect x="110" y="430" width="4" height="60" rx="2"/>
+      <rect x="120" y="455" width="4" height="15" rx="2"/>
+      <rect x="130" y="425" width="4" height="70" rx="2"/>
+      <rect x="140" y="445" width="4" height="30" rx="2"/>
+    </g>
+    <rect x="46" y="576" width="640" height="54" rx="12" fill="#0B0F14"/>
+    <text x="66" y="608" fill="#E6EDF3" font-size="13">▶ 00:00 / 03:42</text>
+    <text x="46" y="660" fill="#8B949E" font-size="12">Clic en el waveform o en una línea para saltar a ese momento.</text>
+
+    <!-- editor -->
+    <rect x="736" y="364" width="676" height="470" rx="16" fill="#111820"/>
+    <text x="754" y="394" fill="#E6EDF3" font-size="16" font-weight="700">Transcripción</text>
+    <rect x="754" y="408" width="640" height="390" rx="12" fill="#0B0F14"/>
+    <g font-size="12">
+      <rect x="770" y="424" width="608" height="54" rx="8" fill="#111820"/>
+      <text x="782" y="445" fill="#58A6FF">00:00:00 · A</text>
+      <text x="782" y="465" fill="#E6EDF3">Hola, ¿cómo estás?</text>
+      <rect x="770" y="486" width="608" height="54" rx="8" fill="#0B0F14"/>
+      <text x="782" y="507" fill="#3FB950">00:00:05 · B</text>
+      <text x="782" y="527" fill="#E6EDF3">Muy bien, gracias.</text>
+      <rect x="770" y="548" width="608" height="54" rx="8" fill="#0B0F14"/>
+      <text x="782" y="569" fill="#8B949E">00:00:12 · —</text>
+      <text x="782" y="589" fill="#E6EDF3">Sin hablante asignado.</text>
+    </g>
+
+    <!-- export -->
+    <rect x="28" y="854" width="1384" height="86" rx="16" fill="#111820"/>
+    <text x="48" y="902" fill="#E6EDF3" font-size="14" font-weight="700">Exportar</text>
+    <g fill="#161B22" stroke="#30363D">
+      <rect x="140" y="874" width="72" height="44" rx="8"/>
+      <rect x="220" y="874" width="72" height="44" rx="8"/>
+      <rect x="300" y="874" width="72" height="44" rx="8"/>
+      <rect x="380" y="874" width="80" height="44" rx="8"/>
+      <rect x="468" y="874" width="80" height="44" rx="8"/>
+      <rect x="556" y="874" width="72" height="44" rx="8"/>
+      <rect x="636" y="874" width="72" height="44" rx="8"/>
+      <rect x="716" y="874" width="72" height="44" rx="8"/>
+    </g>
+    <g fill="#8B949E" font-size="12" text-anchor="middle">
+      <text x="176" y="901">TXT</text>
+      <text x="256" y="901">SRT</text>
+      <text x="336" y="901">VTT</text>
+      <text x="420" y="901">DOCX</text>
+      <text x="508" y="901">PDF</text>
+      <text x="592" y="901">JSON</text>
+      <text x="672" y="901">CSV</text>
+      <text x="752" y="901">MD</text>
+    </g>
+
+    <text x="28" y="968" fill="#484F58" font-size="11">UI grounded in ui_design.pen · Antigravity Studio v2</text>
+  </g>
+</svg>

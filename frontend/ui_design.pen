@@ -1,0 +1,265 @@
+{
+  "version": "1.0",
+  "name": "Antigravity Transcriptor Studio",
+  "children": [
+    {
+      "id": "antigravity-studio",
+      "type": "FRAME",
+      "name": "antigravity-studio",
+      "x": 0,
+      "y": 0,
+      "width": 1440,
+      "height": 980,
+      "fill": "#0B0F14",
+      "layout": "vertical",
+      "gap": 20,
+      "padding": 28,
+      "children": [
+        {
+          "id": "header-brand-and-model-selector",
+          "type": "FRAME",
+          "name": "header-brand-and-model-selector",
+          "width": 1384,
+          "height": 72,
+          "fill": "#111820",
+          "radius": 16,
+          "layout": "horizontal",
+          "justifyContent": "space-between",
+          "alignItems": "center",
+          "padding": 20,
+          "children": [
+            {
+              "id": "brand",
+              "type": "TEXT",
+              "name": "brand",
+              "text": "Antigravity Studio",
+              "fontSize": 22,
+              "fontWeight": 700,
+              "fill": "#E6EDF3"
+            },
+            {
+              "id": "model-size",
+              "type": "FRAME",
+              "name": "model-size-selector",
+              "width": 360,
+              "height": 40,
+              "fill": "#0B0F14",
+              "radius": 10,
+              "layout": "horizontal",
+              "alignItems": "center",
+              "gap": 10,
+              "children": [
+                {
+                  "id": "model-label",
+                  "type": "TEXT",
+                  "name": "model-label",
+                  "text": "Modelo",
+                  "fontSize": 12,
+                  "fill": "#8B949E"
+                },
+                {
+                  "id": "model-select",
+                  "type": "TEXT",
+                  "name": "model-select",
+                  "text": "large-v3-turbo",
+                  "fontSize": 14,
+                  "fill": "#58A6FF"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "upload-media-dropzone",
+          "type": "FRAME",
+          "name": "upload-media-dropzone",
+          "width": 1384,
+          "height": 150,
+          "fill": "#0D141C",
+          "stroke": "#30363D",
+          "strokeDashArray": [8, 6],
+          "radius": 16,
+          "layout": "vertical",
+          "justifyContent": "center",
+          "alignItems": "center",
+          "gap": 6,
+          "children": [
+            {
+              "id": "dropzone-title",
+              "type": "TEXT",
+              "name": "dropzone-title",
+              "text": "Arrastrá tu audio o video acá",
+              "fontSize": 18,
+              "fontWeight": 600,
+              "fill": "#E6EDF3"
+            },
+            {
+              "id": "dropzone-hint",
+              "type": "TEXT",
+              "name": "dropzone-hint",
+              "text": "mp3 · wav · m4a · mp4 · mkv — hasta 512 MB",
+              "fontSize": 12,
+              "fill": "#8B949E"
+            }
+          ]
+        },
+        {
+          "id": "job-status-progress",
+          "type": "FRAME",
+          "name": "job-status-progress",
+          "width": 1384,
+          "height": 54,
+          "fill": "#111820",
+          "radius": 12,
+          "layout": "horizontal",
+          "alignItems": "center",
+          "gap": 16,
+          "padding": 14,
+          "children": [
+            {
+              "id": "status-label",
+              "type": "TEXT",
+              "name": "status-label",
+              "text": "En espera",
+              "fontSize": 13,
+              "fill": "#8B949E"
+            },
+            {
+              "id": "progress-track",
+              "type": "FRAME",
+              "name": "progress-track",
+              "width": 900,
+              "height": 8,
+              "fill": "#21262D",
+              "radius": 999
+            },
+            {
+              "id": "progress-percent",
+              "type": "TEXT",
+              "name": "progress-percent",
+              "text": "0%",
+              "fontSize": 13,
+              "fill": "#58A6FF"
+            }
+          ]
+        },
+        {
+          "id": "media-player-panel-with-waveform",
+          "type": "FRAME",
+          "name": "media-player-panel-with-waveform",
+          "width": 676,
+          "height": 470,
+          "fill": "#111820",
+          "radius": 16,
+          "layout": "vertical",
+          "gap": 14,
+          "padding": 18,
+          "children": [
+            {
+              "id": "waveform",
+              "type": "FRAME",
+              "name": "waveform",
+              "width": 640,
+              "height": 180,
+              "fill": "#0B0F14",
+              "radius": 12
+            },
+            {
+              "id": "media-player",
+              "type": "FRAME",
+              "name": "media-player",
+              "width": 640,
+              "height": 54,
+              "fill": "#0B0F14",
+              "radius": 12
+            },
+            {
+              "id": "player-hint",
+              "type": "TEXT",
+              "name": "player-hint",
+              "text": "Clic en el waveform o en una línea para saltar a ese momento.",
+              "fontSize": 12,
+              "fill": "#8B949E"
+            }
+          ]
+        },
+        {
+          "id": "click-to-seek-transcript-editor",
+          "type": "FRAME",
+          "name": "click-to-seek-transcript-editor",
+          "width": 676,
+          "height": 470,
+          "fill": "#111820",
+          "radius": 16,
+          "layout": "vertical",
+          "gap": 10,
+          "padding": 18,
+          "children": [
+            {
+              "id": "editor-title",
+              "type": "TEXT",
+              "name": "editor-title",
+              "text": "Transcripción",
+              "fontSize": 16,
+              "fontWeight": 700,
+              "fill": "#E6EDF3"
+            },
+            {
+              "id": "transcript-segments",
+              "type": "FRAME",
+              "name": "transcript-segments",
+              "width": 640,
+              "height": 380,
+              "fill": "#0B0F14",
+              "radius": 12,
+              "layout": "vertical",
+              "gap": 8,
+              "padding": 12
+            }
+          ]
+        },
+        {
+          "id": "multi-format-export-panel",
+          "type": "FRAME",
+          "name": "multi-format-export-panel",
+          "width": 1384,
+          "height": 86,
+          "fill": "#111820",
+          "radius": 16,
+          "layout": "horizontal",
+          "alignItems": "center",
+          "gap": 10,
+          "padding": 16,
+          "children": [
+            {
+              "id": "export-title",
+              "type": "TEXT",
+              "name": "export-title",
+              "text": "Exportar",
+              "fontSize": 14,
+              "fontWeight": 700,
+              "fill": "#E6EDF3"
+            },
+            {
+              "id": "export-buttons",
+              "type": "FRAME",
+              "name": "export-buttons",
+              "width": 1100,
+              "height": 44,
+              "layout": "horizontal",
+              "gap": 8
+            }
+          ]
+        },
+        {
+          "id": "blueprint-grounding-footer",
+          "type": "TEXT",
+          "name": "blueprint-grounding-footer",
+          "text": "UI grounded in ui_design.pen · Antigravity Studio v2",
+          "fontSize": 11,
+          "fill": "#484F58"
+        }
+      ]
+    }
+  ]
+}

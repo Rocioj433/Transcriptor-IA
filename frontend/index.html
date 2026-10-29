@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Estudio de transcripción local-first con diarización de hablantes y exportación multi-formato." />
+    <title>Antigravity Studio · Transcriptor con diarización</title>
+    <link rel="stylesheet" href="/src/styles.css" />
+  </head>
+  <body>
+    <div class="app">
+      <header id="header-brand-and-model-selector" class="panel header">
+        <div class="brand">
+          <span class="brand-mark" aria-hidden="true">◍</span>
+          <div>
+            <h1>Antigravity Studio</h1>
+            <p class="brand-sub">Transcripción local-first · diarización · export multi-formato</p>
+          </div>
+        </div>
+        <div class="header-controls">
+          <div id="model-size" class="field">
+            <label for="model-select">Modelo</label>
+            <select id="model-select" aria-label="Modelo de transcripción"></select>
+          </div>
+          <span id="engine-badge" class="badge" title="Motor de transcripción">faster-whisper</span>
+        </div>
+      </header>
+
+      <section id="upload-media-dropzone" class="panel dropzone" aria-label="Subir audio o video">
+        <input id="file-input" type="file" accept="audio/*,video/*" hidden />
+        <div class="dropzone-content">
+          <span class="dropzone-icon" aria-hidden="true">⇪</span>
+          <h2 id="dropzone-title">Arrastrá tu audio o video acá</h2>
+          <p id="dropzone-hint">mp3 · wav · m4a · mp4 · mkv — hasta 512 MB</p>
+          <button id="browse-button" class="button primary" type="button">Elegir archivo</button>
+        </div>
+      </section>
+
+      <section id="job-status-progress" class="panel status" aria-live="polite">
+        <span id="status-label" class="status-label">En espera</span>
+        <div id="progress-track" class="progress-track" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
+          <div id="progress-fill" class="progress-fill"></div>
+        </div>
+        <span id="progress-percent" class="progress-percent">0%</span>
+        <button id="cancel-button" class="button ghost" type="button" hidden>Cancelar</button>
+      </section>
+
+      <p id="notice" class="notice" hidden></p>
+
+      <main class="workspace">
+        <section id="media-player-panel-with-waveform" class="panel player-panel" aria-label="Reproductor y forma de onda">
+          <div class="panel-heading">
+            <h2>Audio</h2>
+            <span id="media-name" class="muted">Sin archivo</span>
+          </div>
+          <canvas id="waveform" class="waveform" aria-label="Forma de onda, clic para saltar"></canvas>
+          <audio id="media-player" controls preload="metadata"></audio>
+          <p id="player-hint" class="hint">Clic en el waveform o en una línea para saltar a ese momento.</p>
+        </section>
+
+        <section id="click-to-seek-transcript-editor" class="panel editor-panel" aria-label="Editor de transcripción">
+          <div class="panel-heading">
+            <h2 id="editor-title">Transcripción</h2>
+            <span id="speaker-count" class="muted">—</span>
+          </div>
+          <div id="transcript-segments" class="transcript">
+            <p class="empty">Subí un archivo para ver la transcripción.</p>
+          </div>
+        </section>
+      </main>
+
+      <section id="multi-format-export-panel" class="panel export-panel" aria-label="Exportar transcripción">
+        <div class="panel-heading">
+          <h2 id="export-title">Exportar</h2>
+          <span class="muted">Descargá un formato o todo en un ZIP</span>
+        </div>
+        <div id="export-buttons" class="export-buttons"></div>
+      </section>
+
+      <footer id="blueprint-grounding-footer" class="footer">
+        UI grounded in <a href="./ui_design.svg" target="_blank" rel="noreferrer">ui_design.pen</a> ·
+        Antigravity Studio v2
+      </footer>
+    </div>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

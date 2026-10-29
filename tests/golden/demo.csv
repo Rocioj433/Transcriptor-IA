@@ -1,0 +1,4 @@
+id,start,end,speaker,text
+0,0.500,5.000,A,"Hola, ¿cómo estás?"
+1,5.000,65.250,B,"Muy bien, gracias."
+2,66.000,70.000,,Sin hablante asignado.
